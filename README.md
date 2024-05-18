@@ -1,24 +1,32 @@
-# README
+# Kata String Calculator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple string calculator implemented using TDD in Ruby on Rails.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+```bash
+1. Clone the repository:
+  git clone https://github.com/shubhamsingh1295/kata_string_calculator.git
+  cd kata_string_calculator
 
-* System dependencies
+2. Install dependencies:
+  bundle install
 
-* Configuration
+3. Run tests:
+  bundle exec rspec
+```    
 
-* Database creation
+## Development Process
+This project follows the three laws of TDD:
 
-* Database initialization
+- You are not allowed to write any production code unless it is to make a failing unit test pass.
+- You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
+- You are not allowed to write any more production code than is sufficient to pass the one failing unit test.
 
-* How to run the test suite
+## Directory Structure
+- app/services/calculator_service.rb: Contains the CalculatorService class.
+- spec/services/calculator_service_spec.rb: Contains the RSpec tests for the CalculatorService class.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Acknowledgements
+ - Inspired by the String Calculator Kata
+ - Follows the principles outlined in the video ["Test Driven Development (TDD)"](https://www.youtube.com/watch?v=qkblc5WRn-U&feature=youtu.be)
